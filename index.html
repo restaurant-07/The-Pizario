@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title id="pageTitle">Shakti Bill | Premium Restaurant</title>
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Config (MUST LOAD FIRST) -->
+    <script src="config.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" id="logo">Shakti<span>Bill</span></a>
+            
+            <div class="mobile-right">
+                <a href="booktable.html" class="mobile-reserve" id="mobileReserveBtn">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>RESERVE</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">HOME</a>
+                <a href="#dishes">DISHES</a>
+                <a href="#loyalty">MEMBERSHIP</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#contact">CONTACT</a>
+                <a href="booktable.html" class="mobile-cta">RESERVE TABLE</a>
+            </div>
+            
+            <a href="booktable.html" class="nav-cta">RESERVE TABLE</a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-subtitle" data-aos="fade-up" id="heroSubtitle">WELCOME TO</div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100" id="heroName"></h1>
+            <p class="hero-desc" data-aos="fade-up" data-aos-delay="200" id="heroDesc">Experience the finest dining where every meal becomes a celebration.</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="booktable.html" class="btn-primary">BOOK A TABLE</a>
+                <a href="#dishes" class="btn-secondary">VIEW MENU</a>
+            </div>
+        </div>
+        <a href="#stats" class="hero-scroll">
+            <span>SCROLL</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+    
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid" id="statsGrid"></div>
+        </div>
+    </section>
+    
+    <!-- Signature Dishes -->
+    <section id="dishes" class="dishes">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-aos="fade-up">SIGNATURE COLLECTION</div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our <span>Specialties</span></h2>
+                <p class="section-desc" data-aos="fade-up" data-aos-delay="200">Crafted with passion, served with love</p>
+            </div>
+            <div class="dishes-grid" id="dishesGrid"></div>
+        </div>
+    </section>
+    
+    <!-- Loyalty Program -->
+    <section id="loyalty" class="loyalty">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-aos="fade-up">EXCLUSIVE MEMBERSHIP</div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">The <span id="clubName">Shakti Club</span></h2>
+                <p class="section-desc" data-aos="fade-up" data-aos-delay="200">Where regular customers become royalty</p>
+            </div>
+            <div class="loyalty-grid" id="loyaltyGrid"></div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-aos="fade-up">INSTAGRAM MOMENTS</div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100"><span id="hashTag">#ShaktiBill</span></h2>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="section-subtitle" data-aos="fade-right">VISIT US</div>
+                    <h2 class="contact-title" data-aos="fade-right" data-aos-delay="100">Get In <span>Touch</span></h2>
+                    <p class="contact-desc" data-aos="fade-right" data-aos-delay="200" id="contactDesc"></p>
+                    <div class="contact-details" id="contactDetails"></div>
+                </div>
+                <div class="contact-map" data-aos="fade-left" data-aos-delay="300" id="mapContainer"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WhatsApp Float -->
+    <a href="#" class="whatsapp-float" id="whatsappFloat" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid" id="footerGrid"></div>
+            <div class="footer-bottom">
+                <p id="copyright">&copy; 2026 Shakti Bill. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
